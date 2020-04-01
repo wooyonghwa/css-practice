@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dfn, abbr, cite</title>
+    <style>
+        p, span{
+            background: white;
+        }
+        a{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <a href="#container">본문바로가기</a>
+    <div id="wrap">
+        <div id="container">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <span>Lorem ipsum dolor sit amet consectetur.</span>
+            <span>Lorem ipsum dolor sit amet consectetur.</span>
+            <span>Lorem ipsum dolor sit amet consectetur.</span>
+            <p><dfn title="짧은 설명ㅋ.ㅋ">HTML</dfn></p> <!-- 단어 정의 -->
+            <p><abbr title="world wide web consortium">w3c</abbr></p> <!-- 축약된 단어 표현 -->
+            <p><cite>우연히 봄</cite> 유주</p> <!-- 작품 -->
+            <p>값 : 50,000원 <small>(부가세 별도)</small></p>        
+        </div>
+    </div>
+</body>
+</html>
