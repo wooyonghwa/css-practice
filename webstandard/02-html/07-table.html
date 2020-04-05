@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <!-- th에 scope는 필수 : col, row, colgroup, rowgroup -->
+    <table border width="100%">
+        <caption>table caption</caption> <!-- 테이블 제목 -->
+        <colgroup>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <col ><!--마지막은 설정하지않음-->
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">table header cell</th>
+                <th scope="col">table header cr cell</ell</th>
+                <th scope="col">table header  r cell</cell</th>
+                <th scope="col">table header  r cell</cell</th>
+            </tr>
+        </thead>
+        <tbody><!-- 필수 , thead나 tfoot는 필수아님-->
+            <tr>
+                <td rowspan="3">table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+            </tr>
+            <tr>
+                <!-- <td>table data cell</td> -->
+                <td>table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+            </tr>
+            <tr>
+                <!-- <td>table data cell</td> -->
+                <td>table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">result</th>
+                <td colspan="3">..</td>
+                <!-- <td>..</td> -->
+                <!-- <td>..</td> -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
