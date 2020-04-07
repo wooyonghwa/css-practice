@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5 form</title>
+</head>
+<body>
+    <form action="#" method="POST"> <!-- novalidate는 문법 검증을 하지 않음을 나타냄-->
+        <fieldset>
+            <legend>html5 form</legend>
+            <p>
+                <label for="username">이름</label>
+                <input type="text" id="username" name="username" value="" disabled="disabled" placeholder="우욤패트릭"
+                >
+            </p>
+            <p>
+                <label for="useremail">이메일</label>
+                <input type="email" id="useremail" name="useremail" value="" placeholder="qhdl0224@gmail.com"
+                 required="required" autocomplete="off"> <!-- required 필수입력항목-->
+            </p>
+            <p>
+                <label for="userurl">웹사이트</label>
+                <input type="url" id="userurl" name="userurl" value="" autofocus="autofocus">
+            </p>
+            <p>
+                <label for="order">주문수량</label>
+                <input type="number" id="order" name="order" value="" min="1" max="20"> <!-- min 최소, max 최대-->
+            </p>
+            <p>
+                <label for="userrange">길이</label>
+                <input type="range" id="userrange" name="userrange" value="30" min="0" max="100" step="10"> <!-- step 은 한번에 이동할 양-->
+            </p>
+            <p>
+                <label for="userdate">제출일</label>
+                <input type="date" id="userdate" name="userdate" value="2019-02-24" min="2019-02-22" max="2019-02-28"> <!-- 지원하지 않는 브라우저가 많음 jquery로 하는게 더 편함-->
+            </p>
+            <p>
+                <label for="usercolor">색상선택</label>
+                <input type="color" id="usercolor" name="usercolor" value="#11b815">
+            </p>
+            <p>
+                <label for="usertel">연락처</label>
+                <input type="tel" id="usertel" name="usertel" value=""> <!-- 문법 검증은 하지 않지만 모바일에서 편리함-->
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Send">
+        </p>
+    </form>
+</body>
+</html>
